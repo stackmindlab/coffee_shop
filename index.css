@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+form {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  height: 80px;
+  background-color: grey;
+}
+
+nav > a {
+  color: rgb(121, 100, 100);
+}
+
+nav:hover {
+  color: rgb(128, 128, 158);
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+}
+
+.bannerH1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85px;
+  color: rgb(128, 128, 158);
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 125px;
+}
+
+.bannerH1:hover {
+  color: rgb(121, 100, 100);
+}
+
+.menuItems {
+  font-size: 30px;
+  color: rgb(121, 100, 100);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imgAll {
+  height: 600px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 30px;
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: gold;
+  font-size: 10px;
+  padding-left: 15px;
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
+
+footer,
+a {
+  text-decoration: none;
+}
+
+button {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .imgAll {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  footer {
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(158, 156, 156);
+    font-size: 30px;
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .footer-email,
+  .footer-website,
+  .footer-location {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .footer-email-form {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgba(115, 115, 170, 0.842);
+  }
+
+  .menuItems {
+    font-size: 35px;
+    font-family: cursive;
+    position: static;
+  }
+
+  .imgAll {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1366px) {
+  .grid-container {
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  header,
+  footer {
+    grid-column: 1 /14;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(210, 128, 243);
+  }
+
+  .menuItems {
+    font-size: 85px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: static;
+  }
+}
