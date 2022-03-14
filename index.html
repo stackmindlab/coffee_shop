@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website with Form</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a> 
+    <a href="#">About</a> 
+    <a href="#">Contact</a>                                
+</nav>
+        
+
+    <h1 class="bannerH1">Online Coffee Shop</h1> 
+    <img class="banner" src="img/coffeshop.jpg" alt="">    
+
+    <div>
+    <h1 class="menuItems" > Menu </h1>
+    </div>
+
+<form id= "form1">
+
+
+<div class="tea">
+    <img  class="imgAll" src="img/Tea.jpg" alt="">
+
+    <label >Tea</label>
+
+    <label id="teaPrice"> 7.00</label>
+    <input class="tea" type="number" value="" id="teaQty"  placeholder="Enter Qty"> 
+</div>
+<div class="bagel">
+    <img class="imgAll" src="img/bagel.jpg" alt="">
+
+    <label>Bagel</label>
+
+    <label id="bagelPrice"> 3.00</label>
+    <input class="bagel" type="number" value="" id="bagelQty"  placeholder="Enter Qty"> 
+</div>
+    <div class="coffee">
+    <img class="imgAll" src="img/coffee.jpg"alt="">
+
+    <label >Coffee</label>
+
+    <label id="coffeePrice"> 11.00</label>
+    <input class="coffee" type="number" value="" id="coffeeQty"  placeholder="Enter Qty"> 
+        <button type = "submit">Calculate</button>     
+
+</div>
+
+</form>
+
+<div id = "title" style = 'font-size: 50px;'>Items Purchased
+    <div id = "tea" style = 'font-size: 40px;'></div>
+    <div id = "bagel" style = 'font-size: 40px;'></div>
+    <div id = "coffee" style = 'font-size: 40px;'></div>
+    <div id = "grandTotal"></div>
+    </div>
+
+
+<footer>
+
+<div>
+    <ul>
+        <span>Contact:</span>
+        <li><a href="#" >contact@onlinecoffee.com</a></li>
+
+        <span>Website:</span>
+        <li><a href="#" >www.onlinecoffee.com</a></li>
+
+            <span>Location:</span>
+        <li><a href="#" >500 Mateo St 102, Los Angeles, CA 90013</a></li>
+    </ul>
+            
+</div>
+<div class="footer-email-form">
+    <h2 class="join">Join The Newsletter</h2>
+    <input type="email" placeholder="Enter your email address" class="footer-email">
+    <input class="footer-email-form" type="Submit" value="Sign Up" class="footer-email-button">
+    
+</div>                                
+
+</footer>
+
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
